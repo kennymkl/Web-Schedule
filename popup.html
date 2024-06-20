@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WebSched</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      background-color: #ffe6e6;
+      color: #4A90E2;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .section h2 {
+      margin: 0 0 10px;
+      color: #e60000;
+    }
+    .schedule-item {
+      margin-bottom: 10px;
+      background-color: #fff3f3;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #e60000;
+    }
+    .schedule-item p {
+      margin: 0;
+    }
+    .schedule-item button, .schedule-item select, .schedule-item input {
+      margin-top: 5px;
+      display: block;
+      width: 100%;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #e60000;
+      color: #fff;
+      cursor: pointer;
+    }
+    .schedule-item button:hover {
+      background-color: #cc0000;
+    }
+    .schedule-item select, .schedule-item input {
+      background-color: #ffe6e6;
+      color: #000;
+    }
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    #category-section {
+      margin-bottom: 20px;
+    }
+    #category-section input {
+      margin-top: 5px;
+      display: block;
+      width: calc(100% - 50px);
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #ffe6e6;
+      color: #000;
+      float: left;
+    }
+    #category-section button {
+      width: 30px;
+      margin-left: 10px;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #e60000;
+      color: #fff;
+      cursor: pointer;
+    }
+    #category-section button:hover {
+      background-color: #cc0000;
+    }
+    .category {
+      border: 1px solid #e60000;
+      padding: 10px;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      background-color: #000;
+      clear: both;
+    }
+    .category h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="section" id="category-section">
+    <h2>Categories</h2>
+    <input type="text" id="new-category" placeholder="New category">
+    <button id="add-category">+</button>
+  </div>
+  <div class="section" id="schedule-section">
+    <h2>Scheduled Pages</h2>
+    <div id="schedules"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
